@@ -14,7 +14,7 @@ import {
     TouchableOpacity,
     NetInfo,
     ActivityIndicator,
-    AppState,
+    
     SafeAreaView,
     Linking
 } from 'react-native';
@@ -634,7 +634,6 @@ this.showLoading()
 
 
       //  alert(AppState.currentState)
-        if (AppState.currentState == 'background' ||AppState.currentState == "inactive" ){
 
             if (notif.data.sd_type == "chat"){
                 this.props.navigation.navigate('ApniChat')
@@ -649,7 +648,7 @@ this.showLoading()
                 GLOBAL.newsid = notif.data.news_id
                 this.props.navigation.navigate('NewsDetail')
             }
-        }
+
 
 
         console.log(notif);
